@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quel est le meilleur site pour estimer sa voiture en ligne gratuitement ? Découvrez comment obtenir une évaluation fiable, transparente pour maximiser sa valeur.">
+    <title>Meilleur site pour estimer sa voiture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .card-hover {
+            transition: all 0.3s ease;
+            transform: perspective(1000px) rotateX(0deg);
+        }
+        .card-hover:hover {
+            transform: perspective(1000px) rotateX(5deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%);
+            background-size: 200% 200%;
+            animation: gradient 8s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .car-image-container {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 0 0 20px 20px;
+        }
+        .car-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+        .car-image-container:hover .car-image {
+            transform: scale(1.05);
+        }
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            padding: 30px;
+            color: white;
+        }
+        .rating {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+        .rating .stars {
+            color: #fbbf24;
+            margin-right: 4px;
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Estimez votre voiture en ligne gratuitement</h1>
+            <p class="text-xl max-w-2xl mx-auto opacity-90">Obtenez une évaluation précise et rapide de votre véhicule avec les meilleurs outils du marché</p>
+        </div>
+    </header>
+
+    <!-- Image de voiture -->
+    <div class="car-image-container">
+        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+             alt="Voiture de luxe" 
+             class="car-image">
+        <div class="image-overlay">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-2">Obtenez le meilleur prix pour votre véhicule</h2>
+                <p class="text-lg opacity-90">Comparez les estimations des meilleures plateformes en quelques clics</p>
+                <button class="mt-6 bg-white text-purple-600 font-semibold py-3 px-8 rounded-full btn-hover">
+                    Commencer l'estimation <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow container mx-auto px-4 py-16">
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold mb-4">Quel est le meilleur site pour estimer sa voiture en ligne gratuitement ?</h2>
+                <p class="text-gray-600 text-lg">Découvrez les plateformes les plus fiables pour obtenir une estimation transparente de votre véhicule.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MyTracks Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">MyTracks</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span>4.9/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Analyse du marché en temps réel basée sur des milliers d'annonces pour une estimation précise.</p>
+                        <a href="https://mytracks.fr" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- estimetavoiture.fr Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-car text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">estimetavoiture.fr</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span>4.2/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Évaluation gratuite et instantanée sans besoin de renseigner vos informations personnelles.</p>
+                        <a href="https://estimetavoiture.fr" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- L'Argus Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-star text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">L'Argus</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span>4.3/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">La référence historique avec des estimations en ligne gratuites et une connaissance approfondie du marché.</p>
+                        <a href="https://www.largus.fr" target="_blank" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- La Centrale Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-search text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">La Centrale</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span>4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Outil d'évaluation gratuit et rapide avec une large base de données et une interface simple.</p>
+                        <a href="https://www.lacentrale.fr" target="_blank" class="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Autobiz Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-bolt text-yellow-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Autobiz</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                    <span>4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Estimation en ligne gratuite souvent couplée à une proposition de rachat de votre véhicule.</p>
+                        <a href="https://www.autobiz.fr" target="_blank" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- vendezvotrevoiture.fr Card -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-euro-sign text-indigo-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">vendezvotrevoiture.fr</h3>
+                                <div class="rating">
+                                    <span class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </span>
+                                    <span>4.1/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Solution pour vendre rapidement avec estimation en ligne et proposition de rachat.</p>
+                        <a href="https://www.vendezvotrevoiture.fr" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 btn-hover">
+                            Estimer maintenant <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-8 mb-12 card-hover">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Comment choisir la meilleure évaluation en ligne ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center p-4">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 hover:bg-blue-200 transition-colors duration-300">
+                        <i class="fas fa-rocket text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-2">Vendre immédiatement</h3>
+                    <p class="text-gray-600 text-sm">Privilégiez les sites de rachat direct comme Autobiz ou MyTracks.fr</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 hover:bg-green-200 transition-colors duration-300">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-2">Fiabilité et transparence</h3>
+                    <p class="text-gray-600 text-sm">Orientez-vous vers MyTracks ou estimetavoiture.fr</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4 hover:bg-purple-200 transition-colors duration-300">
+                        <i class="fas fa-info-circle text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-medium mb-2">Simple information</h3>
+                    <p class="text-gray-600 text-sm">La Centrale, l'Argus et MyTracks sont d'excellentes références</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+            </div>
+            <p class="text-gray-500">© 2025 Tous droits réservés - Meilleure estimation automobile</p>
+        </div>
+    </footer>
+</body>
+</html>
